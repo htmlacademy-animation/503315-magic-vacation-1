@@ -2,10 +2,10 @@
 .screen--intro {
    &.active {
     .intro__message {
-      animation: fadeIn ease 1s;
+      animation: fadeInIntro ease 1s;
     }
 
-    @keyframes fadeIn {
+    @keyframes fadeInIntro {
       0% {
         opacity:0;
         transform: translateY(20px);
