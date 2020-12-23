@@ -2,7 +2,7 @@
 .screen--intro {
    &.active {
     .intro__message {
-      animation: fadeInIntro ease 1s;
+      animation: fadeInIntro 1s ease;
     }
 
     @keyframes fadeInIntro {

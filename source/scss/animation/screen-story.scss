@@ -1,11 +1,11 @@
 .screen--story {
   &.active {
    .swiper-slide-active p {
-     animation: fadeInSliderActive ease 1s;
+     animation: fadeInSliderActive 1s ease;
    }
 
    .swiper-slide-next p {
-      animation: fadeInSliderNext ease 1s;
+      animation: fadeInSliderNext 1s ease;
   }
 
    @keyframes fadeInSliderActive {
