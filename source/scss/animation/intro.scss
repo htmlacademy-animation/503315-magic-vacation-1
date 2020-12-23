@@ -1,14 +1,19 @@
-.intro__message {
-  transform: translateY(20px);
-  opacity: 0;
-  transition: all 1s ease 1s;
-}
 
 .screen--intro {
-  &.active {
+   &.active {
     .intro__message {
-      transform: translateY(0);
-      opacity: 1;
+      animation: fadeIn ease 1s;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity:0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity:1;
+        transform: translateY(0);
+      }
     }
   }
 }
