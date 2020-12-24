@@ -1,0 +1,31 @@
+.social-block__toggler {
+  transition: color 0.3s ease;
+
+  &::before {
+    transition: all 0.3s ease;
+  }
+}
+
+.social-block__list {
+  transition: opacity 0.3s ease;
+}
+
+.social-block__link {
+  opacity: 0;
+}
+
+.social-block--active {
+  .social-block__link {
+    opacity: 1;
+
+    &--fb {
+      transition: opacity .3s ease .1s;
+    }
+    &--insta {
+      transition: opacity .5s ease .2s;
+    }
+    &--vk {
+      transition: opacity .7s ease .3s;
+    }
+  }
+}

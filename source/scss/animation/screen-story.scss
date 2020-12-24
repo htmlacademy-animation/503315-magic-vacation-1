@@ -1,0 +1,39 @@
+.screen--story {
+  &.active {
+   .swiper-slide-active p {
+     animation: fadeInSliderActive 1s ease;
+   }
+
+   .swiper-slide-next p {
+      animation: fadeInSliderNext 1s ease;
+  }
+
+   @keyframes fadeInSliderActive {
+     0% {
+       opacity:0;
+       transform: translateX(20%);
+     }
+     100% {
+       opacity:1;
+       transform: translateX(0);
+     }
+   }
+
+   @keyframes fadeInSliderNext {
+    0% {
+      opacity:0;
+      transform: translateX(20%);
+    }
+
+    50% {
+      opacity:0;
+      transform: translateX(20%);
+    }
+
+    100% {
+      opacity:1;
+      transform: translateX(0);
+    }
+  }
+ }
+}

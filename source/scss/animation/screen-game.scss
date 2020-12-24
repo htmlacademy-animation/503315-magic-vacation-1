@@ -1,0 +1,23 @@
+.screen--game {
+  .form__field {
+    width: calc(100% - 21rem);
+    margin-left: auto;
+  }
+}
+
+.screen--game {
+  &.active {
+    .form__field {
+      animation: chatInputAppear 1s ease;
+    }
+
+    @keyframes chatInputAppear {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: calc(100% - 21rem);
+      }
+    }
+  }
+}
