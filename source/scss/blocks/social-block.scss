@@ -53,10 +53,10 @@
   .social-block--active & {
     color: $c-purple;
 
-    &::before {
-      width: 112.5%;
-      height: 112.5%;
-    }
+    // &::before {
+    //   // width: 112.5%;
+    //   // height: 112.5%;
+    // }
   }
 
   &:focus {

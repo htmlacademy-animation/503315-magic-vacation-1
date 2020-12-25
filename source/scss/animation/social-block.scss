@@ -1,9 +1,18 @@
 .social-block__toggler {
   transition: color 0.3s ease;
 
-  &::before {
-    transition: all 0.3s ease;
+  &:hover {
+    &::before {
+      //думаю, есть более простой способ, но scale, например, не работает.
+      width: 110%;
+      height: 110%;
+      left: -5%;
+      top: -5%;
+      transition: all 0.3s ease;
+    }
   }
+
+
 }
 
 .social-block__list {
