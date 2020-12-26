@@ -3159,10 +3159,6 @@ img {
   .social-block__toggler:hover,
   .social-block--active .social-block__toggler {
     color: #a67ee5; }
-    .social-block__toggler:hover::before,
-    .social-block--active .social-block__toggler::before {
-      width: 112.5%;
-      height: 112.5%; }
   .social-block__toggler:focus {
     color: #a67ee5;
     outline: none; }
@@ -3318,7 +3314,11 @@ img {
 
 .social-block__toggler {
   transition: color 0.3s ease; }
-  .social-block__toggler::before {
+  .social-block__toggler:hover::before {
+    width: 110%;
+    height: 110%;
+    left: -5%;
+    top: -5%;
     transition: all 0.3s ease; }
 
 .social-block__list {
