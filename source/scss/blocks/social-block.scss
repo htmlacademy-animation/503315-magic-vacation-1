@@ -17,6 +17,7 @@
   height: 4rem;
   color: $c-dark;
   border-radius: 50%;
+  opacity: 0;
 
   @media (max-width: $tablet) and (orientation: portrait) {
     display: none;
@@ -35,6 +36,10 @@
     background-color: $c-light;
     border: 2px solid $c-light;
     z-index: -1;
+    transform-origin: center;
+    left: 0;
+    top: 0;
+    transform: scale(0);
   }
 
   svg {
@@ -48,10 +53,10 @@
   .social-block--active & {
     color: $c-purple;
 
-    &::before {
-      width: 112.5%;
-      height: 112.5%;
-    }
+    // &::before {
+    //   // width: 112.5%;
+    //   // height: 112.5%;
+    // }
   }
 
   &:focus {
