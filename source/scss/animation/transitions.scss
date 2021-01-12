@@ -1,0 +1,55 @@
+.page--loaded {
+  .screen__footer {
+    transform: translateY(0);
+    transition: all 1s cubic-bezier(0.08, 0.8, 0, 1);
+  }
+
+  .page-header__menu {
+    opacity: 1;
+    transition: opacity 1s cubic-bezier(0.08, 0.8, 0, 1);
+  }
+
+  .page-header__logo {
+    transform: translateX(0);
+    opacity: 1;
+    transition: all 1s cubic-bezier(0.08, 0.8, 0, 1);
+  }
+
+  .social-block__toggler {
+    opacity: 1;
+    transition: all 1s cubic-bezier(0.08, 0.8, 0, 1);
+
+    &::before {
+      width: 100%;
+      height: 100%;
+      transition: all 0.5s cubic-bezier(0.17, 0.67, 0.55, 1.34);
+    }
+
+    &:hover {
+      &::before {
+        width: 110%;
+        height: 110%;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}
+
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $c-dark;
+}
+
+.screen--prizes {
+  &.active ~ .backdrop {
+    transition-property: height;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    height: 100%;
+  }
+}

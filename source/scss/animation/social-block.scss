@@ -11,13 +11,13 @@
     opacity: 1;
 
     &--fb {
-      transition: opacity .3s ease .1s;
+      transition: opacity 0.3s ease 0.1s;
     }
     &--insta {
-      transition: opacity .5s ease .2s;
+      transition: opacity 0.5s ease 0.2s;
     }
     &--vk {
-      transition: opacity .7s ease .3s;
+      transition: opacity 0.7s ease 0.3s;
     }
   }
 }
